@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VR Biology Models</title>
+<title>VR Stomata Model</title>
 
 <style>
 
@@ -14,7 +14,7 @@ font-family:Arial,sans-serif;
 background:black;
 }
 
-/* Background Model */
+/* Background */
 
 .background{
 position:fixed;
@@ -45,24 +45,25 @@ z-index:100;
 }
 
 
-/* Container for both models */
+/* Stomata container */
 
-.models-container{
+.model-container{
 position:absolute;
 width:100%;
 height:100%;
 display:flex;
-justify-content:space-around;
+justify-content:center;
 align-items:center;
 }
 
 
-/* Each model block */
+/* Stomata box */
 
 .model-box{
 
-width:40%;
-height:60%;
+width:70%;
+height:75%;
+
 border-radius:20px;
 overflow:hidden;
 
@@ -71,6 +72,7 @@ background:rgba(255,255,255,0.15);
 backdrop-filter:blur(10px);
 
 box-shadow:0 0 20px rgba(255,255,255,.5);
+
 }
 
 
@@ -86,9 +88,9 @@ border:none;
 .label{
 
 text-align:center;
-font-size:22px;
+font-size:24px;
 color:white;
-padding:10px;
+padding:12px;
 background:rgba(0,0,0,.5);
 
 }
@@ -98,17 +100,10 @@ background:rgba(0,0,0,.5);
 
 @media(max-width:768px){
 
-.models-container{
-
-flex-direction:column;
-gap:20px;
-
-}
-
 .model-box{
 
-width:90%;
-height:35%;
+width:95%;
+height:55%;
 
 }
 
@@ -140,39 +135,21 @@ allow="autoplay; fullscreen; xr-spatial-tracking">
 
 <div class="title">
 
-🌿 Explore Biology in VR
+🌱 Stomata VR Explorer
 
 </div>
 
 
-<div class="models-container">
-
-    <!-- Stomata -->
+<div class="model-container">
 
     <div class="model-box">
 
         <div class="label">
-        🌱 Stomata
+            🌱 Stomata
         </div>
 
         <iframe
         src="https://sketchfab.com/models/00ffda2fc813426a9852abe6350332ca/embed?autostart=1&ui_controls=0&ui_infos=0"
-        allow="autoplay; fullscreen; xr-spatial-tracking">
-        </iframe>
-
-    </div>
-
-
-    <!-- Photosynthesis -->
-
-    <div class="model-box">
-
-        <div class="label">
-        ☀️ Photosynthesis
-        </div>
-
-        <iframe
-        src="https://sketchfab.com/models/447ba8d6d1b74668853fd6096ec89435/embed?autostart=1&ui_controls=0&ui_infos=0"
         allow="autoplay; fullscreen; xr-spatial-tracking">
         </iframe>
 
